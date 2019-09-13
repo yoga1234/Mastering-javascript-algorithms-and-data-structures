@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Understand String Immutability</title>
+  </head>
+  <body>
+
+    <script>
+      /*
+      * In javascript, String values are immutable, which means that they cannot be altered once created.
+      */
+
+      // Example
+      var stringOne = "This is string one";
+      stringOne[0] = "J";
+
+      /*
+      * Cannot change the value of stringOne to "Jhis...", because the contents of stringOne cannot be altered.
+      * Note that this does not mean that stringOne cannot be changed,
+      * just that the individual characters of a string literal cannot be changed.
+      * The only way to change stringOne whould be to assign it with a new string.
+      */
+
+      stringOne = "This is new string";
+
+    </script>
+  </body>
+</html>
