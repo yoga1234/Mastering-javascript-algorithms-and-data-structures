@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Access Multi-Dimensional Arrays With Indexes</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * One way to think of multi-dimensional array, is as an array of arrays.
+    * When you use brackets to access your array,
+    * the first set of brackets refers to the entries in the outer-most (the first level array) array.
+    * and each additional pair of brackets refers to the next level of entries inside.
+    */
+
+    var arrayExample = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+      [
+        [10, 11, 12],
+        13,
+        14
+      ]
+    ];
+
+    arrayExample[3]; // return [10, 11, 12], 13, 14
+    arrayExample[3][0]; // return [10, 11, 12]
+    arrayExample[3][0][1]; // return 11
+
+  </script>
+  </body>
+</html>
