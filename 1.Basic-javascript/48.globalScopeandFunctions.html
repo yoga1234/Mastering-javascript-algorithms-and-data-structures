@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Global Scope and Functions</title>
+  </head>
+  <body>
+
+  <script>
+    /*
+    * In javascript, scope refers to the visibility of variables.
+    * Variables which are defined outside of a function block have global scope.
+    * This means, they can be seen everywhere in your javascript code.
+    *
+    * Variablels which are used without the var keyword are automatically created in the global scope.
+    * This can create unintended consequences elsewhere in your code or when running a function again.
+    * Best practices is always declare your variables with var.
+    */
+
+    // This examplee above is a global variable.
+    exampleVar = "This is example string";
+
+    function exampleFunctions(){
+      // Variable below will be global too!
+      exampleTwo = "This is another example";
+    }
+
+  </script>
+  </body>
+</html>
