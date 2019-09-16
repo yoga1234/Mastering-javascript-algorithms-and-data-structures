@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Global vs Local in Function</title>
+  </head>
+  <body>
+
+  <script>
+    /*
+    * It is possible to have both local and global variables with the same name.
+    * When do this, the local variable takes precedence over the global variable.
+    */
+
+    // Example
+    var exVar = "This is global";
+    function exFunc(){
+      var exVar = "This is local";
+      return exVar;
+    }
+    // The function exFunc will return "This is local" because the local version of the variable is present.
+
+  </script>
+  </body>
+</html>
