@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Comparison with the Equality Operator</title>
+  </head>
+  <body>
+
+  <script>
+    /*
+    * There are many comparison operator in javascript.
+    * All of these operators return a boolean true or false value.
+    *
+    * The most basic operator is the equality operator == .
+    * The equality operator compares two values and returns true if they're equivalent or false if they are not.
+    * Note that equality is different from assignment (=),
+    * which assigns the value at the right of the operator to a variable in the left.
+    */
+
+    // example
+    function equalityTest(myVal){
+      if(myVal == 10){
+        return "Equal";
+      }
+      return "Not equal";
+    }
+
+    /*
+    * If myVal is equal to 10, the equality operator returns true.
+    * so the code in the curly braces will execute and the function will return "equal".
+    * Otherwise, the function will return "Not equal".
+    */
+
+    /*
+    * In order for javascript to compare two different data types (for example, numbers and strings),
+    * it must convert one type to another.
+    * This is known as "Type coercion". Once it does, however, it can compare terms as follows:
+    * 1 == 1 -> true
+    * 1 == 2 -> false
+    * 1 == '1' -> true
+    * "3" == 3 ->true
+    */
+
+  </script>
+  </body>
+</html>
