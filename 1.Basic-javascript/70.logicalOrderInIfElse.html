@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Logical Order In If Else Statements</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * Order is important in if, else if statements.
+    *
+    * The function is executed from top to bottom so you will want to be careful of what statement comes first.
+    *
+    * Take these two function as an example.
+    */
+
+    // example one
+    function exampleOne(x){
+      if(x < 1){
+        return "Less than one";
+      } else if(x < 2){
+        return "Less than two";
+      } else {
+        return "Greater than or equal to two";
+      }
+    }
+
+    // and second example just switches the order of the statements:
+
+    function exampleTwo(x){
+      if (x < 2) {
+        return "Less than two";
+      } else if(x < 1){
+        return "Less than one";
+      } else {
+        return "Greater than or equal to two";
+      }
+    }
+
+    /*
+    * While these two function look nearly identical if we pass a number to both we get different output.
+    *
+    * exampleOne(0); -> "Less than one"
+    * exampleTwo(0); -> "Less than two"
+    */
+
+  </script>
+  </body>
+</html>
