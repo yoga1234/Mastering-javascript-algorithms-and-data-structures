@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stand in Line</title>
+  </head>
+  <body>
+
+  <script>
+    /*
+    * In Computer Science a queue is an abstract Data Structure where items are kept in order.
+    * New items can be added at the back of the queue,
+    * and old items are taken off from the front of the queue.
+    */
+
+    /*
+    * Example
+    * Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+    * Add the number to the end of the array, then remove the first element of the array.
+    * The nextInLine function should then return the element that was removed.
+    */
+
+    function nextInLine(arr, item){
+      arr.push(item); // push new number to the end of the array. now arr is [1, 2, 3, 4, 5, 6]
+      var newArr = arr.shift(); // remove first number in the array and assign the removed number into variable called newArr.
+      return newArr;
+    }
+
+    // creating array
+    var testArr = [1, 2, 3, 4, 5];
+
+    // test code
+    console.log("Before: " + JSON.stringify(testArr));
+    console.log(nextInLine(testArr, 6));
+    console.log("After: " + JSON.stringify(testArr));
+
+    /*
+    * Note:
+    * JSON.stringify() method converts a Javascript object or value to JSON string,
+    * when sending data to a web server the data has to be a string.
+    */
+
+  </script>
+  </body>
+</html>
