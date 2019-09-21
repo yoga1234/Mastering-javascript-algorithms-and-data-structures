@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Return Early Pattern for Functions</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * When a return statement is reached,
+    * the execution of the current function stops and control returns to the calling location.
+    */
+
+    // Example 1
+    function myFunc(){
+      console.log("Hello");
+      return "World";
+      console.log("Bye2");
+    }
+    myFunc();
+    /*
+    * The above outputs "Hello" to the console, returns "World",
+    * but "Bye2" is never output,
+    * because the function exits at the return statement.
+    */
+
+  </script>
+  </body>
+</html>
