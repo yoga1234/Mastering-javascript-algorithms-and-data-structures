@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Returnin Boolean Values from Functions</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * Sometimes people use an if/else statement to do a comparison.
+    */
+
+    // Example1
+    function isEqual(a, b){
+      if (a === b) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    /*
+    * But there is a better way to do this. Since === returns true or false,
+    * we can return the result of comparison:
+    */
+
+    // Example 2
+    function isEqual2(a, b){
+      return a === b;
+    }
+
+  </script>
+  </body>
+</html>
