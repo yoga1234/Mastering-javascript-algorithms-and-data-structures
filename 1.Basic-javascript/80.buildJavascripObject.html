@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Build Javascript Objects</title>
+  </head>
+  <body>
+
+    <script>
+
+      /*
+      * Object are similar to arrays, except that instead of using indexes to access and modify their data,
+      * you access the data in objects through what are called properties.
+      *
+      * Objects are useful for storing data in a structured way,
+      * and can represent real world objects, like a cat.
+      */
+
+      // Example of cat object:
+      var cat = {
+        "name": "Whiskers",
+        "legs": 4,
+        "tails": 1,
+        "enemies": ["Water", "Dogs"]
+      };
+
+      /*
+      * In the example above, all the properties are stored as strings,
+      * such as: "name", "legs" and "tails".
+      * However, you can also use numbers as properties.
+      * You can even omit the quotes for single-word string properties, as example below:
+      */
+
+      var anotherObject = {
+        make: "Ford",
+        5: "Five",
+        "model": "focus"
+      };
+
+      /*
+      * However, if your object has non-string properties, javascript will automatically typecast them as strings.
+      */
+
+      // Example of dog object:
+      var myDog = {
+        "name": "Doggy",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["cat", "water", "ball"]
+      };
+
+    </script>
+  </body>
+</html>
