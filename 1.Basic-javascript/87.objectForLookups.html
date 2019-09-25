@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Using Objects for Lookups</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * Objects can be thought of as a key/value storage, like a dictionary.
+    * If you have tabular data, you can use an object to lookup values rather than a switch statement or an if/else chain.
+    * This is most useful when you know that your input data is limited to a certain range.
+    */
+
+    // Here is an simple example:
+    var alpha = {
+      1:"a",
+      2:"b",
+      3:"c",
+      4:"d",
+      5:"e",
+      6:"f"
+    };
+    alpha[2]; // "b"
+    alpha[4]; // "d"
+
+    var value = 2;
+    alpha[value]; //"b"
+
+    // Another Example
+    function phoneticLookup(val){
+      var result = "";
+
+      var lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot": "Frank"
+      };
+
+      result = lookup[val];
+
+      return result;
+    }
+
+    phoneticLookup("Charlie");
+
+  </script>
+  </body>
+</html>
