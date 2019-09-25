@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Testing Objects for Properties</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * Sometimes it is useful to check if the property of a given object exist or not.
+    * We can use .hasOwnProperty(propname) method of objects to determine if that object has the given property name.
+    * .hasOwnProperty() returns true or false of the property is found or not.
+    */
+
+    // Example
+    var myObj = {
+      top: "hat",
+      bottom: "pants"
+    };
+
+    myObj.hasOwnProperty("top"); // true
+    myObj.hasOwnProperty("middle"); // false
+
+  </script>
+  </body>
+</html>
