@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Accessing Nested Objects</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * The sub-properties of objects can be accesed by chaining together the dot or bracket notation.
+    */
+
+    // Example of Nested Object
+    var ourStorage = {
+      "desk": {
+        "drawer": "stapler"
+      },
+      "cabinet": {
+        "top drawer": {
+          "folder1": "a file",
+          "folder2": "secrets"
+        },
+        "bottom drawer": "soda"
+      }
+    };
+    ourStorage.cabinet["top drawer"].folder2; // "secrets"
+    ourStorage.desk.drawer; // "stapler"
+
+    // Second Example of nested objects
+    var myStorage = {
+      "car": {
+        "inside": {
+          "glove box": "maps",
+          "passenger seat": "crumbs"
+         },
+        "outside": {
+          "trunk": "jack"
+        }
+      }
+    };
+
+    var gloveBoxContents = myStorage.car.inside["glove box"]; // "maps"
+
+  </script>
+  </body>
+</html>
