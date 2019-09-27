@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Accessing Nested Arrays</title>
+  </head>
+  <body>
+
+    <script>
+
+      /*
+      * As we have seen in the accessing nested objects example,
+      * objects can contain both nested objects and nested arrays.
+      * Similar to accessing nested objects,
+      * Array bracket notation can be chained to access nested arrays.
+      */
+
+      // Example of nested array:
+      var ourPet = [
+        {
+          animalType: "cat",
+          names: [
+            "Meowzer",
+            "Fluffy",
+            "Kit-cat"
+          ]
+        },
+        {
+          animalType: "dog",
+          names: [
+            "Spot",
+            "Bowser",
+            "Frankie"
+          ]
+        }
+      ];
+      ourPets[0].names[1]; // "Fluffy"
+      ourPets[1].names[0]; // "Spot"
+
+      // Second Example of Nested Arrays
+      var myPlants = [
+        {
+          type: "flowers",
+          list: [
+            "rose",
+            "tulip",
+            "dandelion"
+          ]
+        },
+        {
+          type: "trees",
+          list: [
+            "fir",
+            "pine",
+            "birch"
+          ]
+        }
+      ];
+      var secondTree = myPlants[1].list[1];
+
+    </script>
+  </body>
+</html>
