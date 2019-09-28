@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Iterate with Javascript Do...While Loops</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * The next type of loop is called a "do...while" loop because it first will "do" one pass of the code inside the loop no matter what,
+    * and then it runs "while" a specified condition is true and stops once that condition is no longer true.
+    */
+
+    // Example
+    var ourArray = [];
+    var i = 0;
+    do {
+      ourArray.push(i);
+      i++;
+    } while (i < 5);
+
+    /*
+    * This behave just as any ohter type of loop,
+    * and the resulting array would like [0, 1, 2, 3, 4].
+    * However, what makes the do...while different from other loops is how it behaves when the condition fails on the first check.
+    * Essentially, a do...while loop ensures that the code inside the loop will run at least once.
+    */
+
+  </script>
+  </body>
+</html>
