@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Use Destructuring Assignment to Assign Variables from Objects</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * Spread operator can effectively spread or unpack the contents of the array.
+    *
+    * We can do something similar with objects as well.
+    * Destructuring assignmnemt is special syntax for neatly assigning values taken directly from an object to variables.
+    */
+
+    // Considering the following ES5 Code:
+    var voxel = {x: 3.6, y: 7.4, z: 6.54};
+    var x = voxel.x;
+    var y = voxel.y;
+    var z = voxel.z;
+
+    // Here's the same assignment statement with ES6 destructuring syntax:
+    // const {x, y, z} = voxel; -> x = 3.6, y = 7.4, z = 6.45
+
+    // If instead you want to store the values of voxel.x into a, voxel.y into b and voxel.z into c, you have that freedom as well.
+    // const {x : a, y : b, z : c } = voxel; -> x = 3.6, y = 7.4, z = 6.45
+    // You may read it as "get the field x and copy the value into a" and so on.
+
+  </script>
+  </body>
+</html>
