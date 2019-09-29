@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Use the Rest Operator with Function Parameter</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * In order to helop us create more flexible functions,
+    * ES6 introduces the [rest operator] for function parameters.
+    * With the rest operator, you can create functions that takt a variable number of arguments.
+    * These arguments are sotred in an array that can be accessed later from inside the function.
+    */
+
+    // example
+    function howMany(...args){
+      return "You have passed " + args.length + " arguments.";
+    }
+    console.log(howMany(0, 1, 2)); // You passed 3 arguments
+    console.log(howMany("string", null, [1, 2, 3], {})); // You have passed 4 arguments
+
+  </script>
+  </body>
+</html>
