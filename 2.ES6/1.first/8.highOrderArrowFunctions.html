@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Write Higher Order Arrow Functions</title>
+  </head>
+  <body>
+
+  <script>
+
+  /*
+  * Arrow functions can be powerful when processing data.
+  *
+  * Arrow functions work relly well with higher order functions,
+  * such as map(), filter() and reduce(),
+  * that take other function as arguments for processing collections of data.
+  */
+
+  /*
+  * Read the following code:
+  * FBPosts.filter(function(post){
+  *  return post.thumbnail !== null && post.shares > 100 && post.likes > 500;
+  * })
+  * Other words high order function is a function inside a function.
+  *
+  * We have written this with filter() to at least make it somewhat readable.
+  * Now compare it to the following code which uses arrow function syntax instead:
+  * FBPost.filter((post) => post.thumbnail !== null && post.shares > 100 && post.likes > 500)
+  * the example code above is more succinct and accomplishes the same task with fewer lines of code.
+  */
+
+  // Example
+  const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+  const squareList = (arr) => {
+        "use strict";
+        const squaredIntegers = arr.filter( (num) => num > 0 && num % parseInt(num) === 0 ).map( (num) => Math.pow(num, 2) );
+        return squaredIntegers;
+      };
+  const squaredIntegers = squareList(realNumberArray);
+  console.log(squaredIntegers);
+
+  </script>
+  </body>
+</html>
