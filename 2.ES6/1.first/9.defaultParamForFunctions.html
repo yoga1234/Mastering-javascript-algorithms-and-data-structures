@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Set Default Parameters for Your Functions</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * In order to help us create more flexible functions, ES6 introduces default parameters for functions.
+    */
+
+    // First Example
+    function greeting(name = "Anonymous"){
+      return "Hello " + name;
+    }
+    console.log(greeting("John")); // Hello John
+    console.log(greeting()); // Hello Anonymous
+
+    /*
+    * The default parameter kicks in when the argument is not specified (it is undefined).
+    * As you can see in the example above, the parameter [name] will receive its default value ["anonymous"]-
+    * when you do not provide a value for the parameter.
+    * You can add default value for many parameters as you want.
+    */
+
+  </script>
+  </body>
+</html>
