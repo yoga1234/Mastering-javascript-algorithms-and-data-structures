@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Use Arrow Functions to Write Concise Anonymous Functions</title>
+  </head>
+  <body>
+
+  <script>
+
+  /*
+  * In javascript, we often don't need to name our functions,
+  * especially when passing a function as an argument to another function.
+  * Instead, we create inline functions.
+  * We don't need to name these functions because we do not reuse them anywhere else.
+  */
+
+  // First Example:
+  const firstFunc = function(){
+    const myVar = "value";
+    return myVar;
+  }
+
+  /*
+  * ES6 provides us with the syntatic sugar to not have to write anonymous functions this way.
+  * Instead, you can use [arrow function syntax].
+  */
+
+  // Second example with arrow function:
+  var secondFunc = () => {
+    const myVar = "value";
+    return myVar;
+  }
+
+  /*
+  * When there is no function body and only return value,
+  * arrow function syntax allows you to omit the keyword [return] as well as the brackets surrounding the code.
+  * This helps simpifly smaller functions into one-line statements.
+  */
+
+  // Third example with one-line statements:
+  const thirdFunc = () => "value";
+  // The code above will still return ["value"] by default.
+
+  </script>
+  </body>
+</html>
