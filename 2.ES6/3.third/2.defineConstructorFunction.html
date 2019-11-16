@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Use class Syntax to Define a Constructor Function</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * ES6 provides a new syntax to help create objects, using the keyword [class];
+    *
+    * This is to be noted, that the [class] syntax is just a syntax,
+    * and not a full-fledged class based implementation of object oriented paradigm,
+    * unlike in languages like Java, or Python, or Ruby etc.
+    *
+    * In ES5, we usually define a constructor function,
+    * and use the [new] keyword to instantiate an object.
+    */
+
+    // Example:
+    var spaceShuttle = function(targetPlanet){
+      this.targetPlanet = targetPlanet;
+    }
+    var zeus = new spaceShuttle('Jupiter');
+
+    // The class syntax simply replaces the constructor function creation:
+    class spaceShuttle2 {
+      constructor(targetPlanet){
+        this.targetPlanet = targetPlanet;
+      }
+    }
+    const zeus2 = new spaceShuttle2('Jupiter');
+    /*
+    * Notice that the [class] keyword declares a new function and a constructor was added,
+    * which would be invoked when [new] is called - to create new object.
+    */
+
+    /*
+    * NOTES:
+    * UpperCamelCase should be used by convention for ES6 class names,
+    * as in [SpaceShuttle] used above.
+    * The constructor method is a special method for creating and initializing an object
+    * with a class.
+    */
+
+  </script>
+  </body>
+</html>
