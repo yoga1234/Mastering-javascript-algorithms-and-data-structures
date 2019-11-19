@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Regex: Extract Matches</title>
+  </head>
+  <body>
+
+    <script>
+
+      /*
+      * So far, only been checking if a pattern exists or not within a string.
+      * You can also extract the actual matches you found with the [.match()] method.
+      *
+      * To use the [.match()] method, apply the method on a string,
+      * and pass in the regex inside the parentheses.
+      */
+
+      // Here is an example:
+      "Hello, World".match(/Hello/);
+      // Returns ["Hello"]
+
+      let ourStr = "Regular expressions";
+      let ourRegex = /expressions/;
+      ourStr.match(ourRegex);
+      // returns ["expressions"]
+
+    </script>
+  </body>
+</html>
