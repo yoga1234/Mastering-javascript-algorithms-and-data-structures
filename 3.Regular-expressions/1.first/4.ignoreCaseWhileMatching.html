@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RegEx: Ignore Case while Matching</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      /*
+      * Up until now, you've looked at regexes to do literal matches of strings.
+      * But sometimes, you might want to also match case differences.
+      *
+      * Case (or sometimes letter case) is the difference between uppercase letters and lowercase letters.
+      * Example of uppercase are "A", "B", and "C".
+      * Example of lowercase are "a", "b", and "c";
+      *
+      * You can match both cases using what is called flag.
+      * There are no other flags but here you'll focus on the flag that ignores case-
+      * the [i] flag.
+      * You can use it by appending it into the regex.
+      * An example of using this flag is [/ignorecase/i].
+      * This regex can match the strings "ignorecase", iGnorECase", and "IgnoreCase".
+      */
+
+      // Example
+      function matchString(){
+        let myString = "freecodecamp";
+        let fccRegex = /FreeCodeCamp/i;
+        let result = fccRegex.test(myString);
+      }
+
+    </script>
+  </body>
+</html>
