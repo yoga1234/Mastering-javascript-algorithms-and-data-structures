@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RegEx: Find More Than the First Match</title>
+  </head>
+  <body>
+
+    <script>
+
+      /*
+      * So far, you have been able to extract or search a pattern once.
+      *
+      * To extract a pattern more than once, you can use the [g] flag.
+      */
+
+      function another(){
+        let testStr = "Repeat, Repeat, Repeat";
+        let repeatRegex = /Repeat/g;
+        return testStr.match(ourRegex); // Returns ["Repeat", "Repeat", "Repeat"]
+      }
+
+    </script>
+  </body>
+</html>
