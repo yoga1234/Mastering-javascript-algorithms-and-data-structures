@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RegEx: Match Literal Strings</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * From the example beforem you searched for the word "Hello" using the regular-
+    * expression /hello/.
+    * That regex searched for a literal match of the string "Hello".
+    * Here's another example searching for a literal match of the string "Kevin":
+    */
+
+    // Searching for "Kevin"
+    function findName(){
+      let testStr = "Hello, my name is Kevin";
+      let testRegex = /Kevin/;
+      return testRegex.test(testStr); // This will return true
+    }
+
+    /*
+    * Any other example of "Kevin" will not match.
+    * For example, the regex /Kevin/ will not match "kevin" or "KEVIN".
+    */
+
+  </script>
+  </body>
+</html>
