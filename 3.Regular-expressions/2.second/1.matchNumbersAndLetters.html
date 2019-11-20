@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Regex: Match Numbers and Letters of the Alphabet</title>
+  </head>
+  <body>
+
+  <script>
+
+    /*
+    * Using the hyphen (-) to match a range of a characters is not limited to the letters.
+    * It also works to match a range of numbers.
+    *
+    * For example, /[0-5]/ matches any number between [0] and [5], including the [0] and [5].
+    *
+    * Also,
+    * it is possible to combing a range of letters and numbers in a single character set.
+    */
+
+    // Example
+    function example(){
+      let jennyStr = "Jenny8675309";
+      let myRegex = /[a-z0-9]/ig;
+      // matches all letters and numbers in jennyStr
+      return jennyStr.match(myRegex);
+    }
+
+  </script>
+  </body>
+</html>
