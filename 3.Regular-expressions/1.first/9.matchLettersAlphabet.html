@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RegEx: Match Letters of the Alphabet</title>
+  </head>
+  <body>
+
+    <script>
+
+      /*
+      * You saw how you can use character sets to specify a group of char to match,
+      * But that's a lot of typing when you need to match a large range of characters
+      * (for example, every letter in alphabet).
+      * Fortunately, there is a built-in feature that makes this short and simple.
+      *
+      * Inside a character set,
+      * you can define a range of characters to match using a hyphen character: -.
+      *
+      * For example, to match lowercase letters [a] through [e] you would use [a-e].
+      */
+
+      // Example
+      function example(){
+        let catStr = "cat";
+        let batStr = "bat";
+        let matStr = "mat";
+        let bgRegex = /[a-e]at/;
+
+        catStr.match(bgRegex); // returns ["cat"]
+        batStr.match(bgRegex); // returns ["bat"]
+        matStr.match(bgRegex); // returns null
+      }
+
+    </script>
+  </body>
+</html>
