@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RegEx: Match Characters that occur Zero or More</title>
+  </head>
+  <body>
+
+
+    <script>
+
+      /*
+      * In the last section, used the + sign to look char that occur one or more times.
+      * There's also an option that matches characters that occur zero or more times.
+      *
+      * The character to do this is the asterisk or star (*).
+      */
+
+      // example
+      function example(){
+        let soccerWord = "gooooalll";
+        let gPhrase = "good feeling";
+        let oPhrase = "over the moon";
+        let goRegex = /go*/;
+        soccerWord.match(goRegex); // returns ["gooo"]
+        gPhrase.match(goRegex); // returns ["g"]
+        oPhrase.match(goRegex); // returns null
+      }
+
+    </script>
+  </body>
+</html>
