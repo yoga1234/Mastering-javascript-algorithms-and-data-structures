@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RegEx: Match Characters that Occur One or More Times</title>
+  </head>
+  <body>
+
+    <script>
+
+      /*
+      * Sometimes, you need to match a character (or group of char)
+      * that appears one or more times in a row.
+      * This means it occurs at least once, and may be repeated.
+      *
+      * You can use the + character to check if that is the case.
+      * Remember, the char or pettern has to be present cosecutively.
+      * That is, the character has to repeat one after the other.
+      *
+      * For example, [/a+/g] would find one match in "abc" and return ["a"].
+      * Because of the +, it would also find a single match in "aabc" and return ["aa"].
+      *
+      * If it were instead checking the string "abab",
+      * it would find two matches and return ["a", "a"] because [a] char aren't in a row.
+      * There is a [b] between them.
+      * Finally, since there is no "a" in the string "bcd", it wouldn't find a match.
+      */
+
+      // Example
+      function example(){
+        let difficultSpelling = "Mississippi";
+        let myRegex = /s+/g;
+        let result = difficultSpelling.match(myRegex);
+        console.log(result);
+      }
+
+    </script>
+  </body>
+</html>
